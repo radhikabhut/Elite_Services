@@ -1,23 +1,111 @@
-@font-face{
-    font-family:f1;
-    src:url(../fonts/Poppins-Regular.ttf)
+@font-face {
+    font-family: f1;
+    src: url(../fonts/Poppins-Regular.ttf)
 }
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:f1;
+
+/*---Globale css---*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: f1;
 }
 
 :root {
     --primary: #AB7442;
     --light: #F5F5F5;
     --dark: #353535;
-    --c1:#ecf0f3;
+    --c1: #fff;
+    --c2: #ecf0f3;
 }
 
-.dropd{
-    color:var(--primary);
-    outline:none;
-    padding:1rem;
+
+
+.fcenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
+
+.lcenter {
+    display: grid;
+    justify-content: center;
+}
+
+.container {
+    width: 90%;
+    height: fit-content;
+    margin: 1.5rem auto;
+}
+
+
+.box {
+    width: fit-content;
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+.shadow1 {
+    box-shadow: 15px 15px 30px #d1d9e6,-15px -15px 30px #fff;
+}
+/*----End Globle----*/
+
+/*----form css----*/
+.frm {
+    /*border:1px solid black !important;*/
+    width: fit-content;
+    border-radius: 10px;
+    text-align: center;
+    padding: 1rem;
+}
+
+    .frm h2 {
+        color: var(--primary);
+    }
+
+    .frm input[type=text] {
+        border: none;
+        background: var(--c2);
+        padding: .5rem;
+        outline: none;
+        color: var(--primary);
+        width: 12rem;
+        border-radius: 10px;
+    }
+
+    .frm table {
+        border-spacing: 1.5rem;
+        text-align: left;
+    }
+
+        .frm table th {
+            font-weight: 100;
+        }
+
+    .frm .dropd {
+        color: var(--primary);
+        outline: none;
+        padding: .3rem;
+        border: none;
+        background: var(--c2);
+        border-radius: 5px;
+    }
+
+.radio {
+    accent-color: var(--primary);
+}
+
+.btn {
+    font-size: 1.1rem;
+    padding: .5rem;
+    background: var(--c1);
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    border-radius: 5px;
+}
+
+    .btn:hover {
+        background: var(--primary);
+        color: var(--c1);
+    }
