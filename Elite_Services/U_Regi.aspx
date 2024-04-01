@@ -8,8 +8,8 @@
     <title></title>
 </head>
 <body>
-    <form id="form1" runat="server">
-        <div class="fcenter frm  shadow1">
+    <form id="form1" runat="server"  >
+        <div class="fcenter frm flx shadow1">
             <h2>Welcome</h2>
             <table>
                  <tr>

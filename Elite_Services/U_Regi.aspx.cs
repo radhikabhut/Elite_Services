@@ -32,7 +32,7 @@ namespace Elite_Services
             {
                 cmd = new SqlCommand("insert into U_Regi_tbl(User_Name,Full_Name,Gender,Mobile,Email_Id,Password,City,Address)values ('" + txt_unm.Text + "','" + txt_fnm.Text + "','" + gender.SelectedValue + "','" + txt_mo.Text + "','" + txt_eml.Text + "','" + txt_ps.Text + "','" + txt_ct.Text + "','" + txt_add.Text + "')", con);
                 cmd.ExecuteNonQuery();
-                Response.Redirect("ULogin.aspx");
+                //Response.Redirect("ULogin.aspx");
 
             }
         }
