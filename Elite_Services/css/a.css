@@ -11,6 +11,11 @@
     font-family: f1;
 }
 
+body,html{
+    height:100%;
+    width:100%;
+}
+
 :root {
     --primary: #AB7442;
     --light: #F5F5F5;
@@ -19,6 +24,9 @@
     --c2: #ecf0f3;
 }
 
+.brdW{
+    border:2px solid white;
+}
 
 
 .fcenter {
@@ -49,6 +57,28 @@
 .shadow1 {
     box-shadow: 15px 15px 30px #d1d9e6,-15px -15px 30px #fff;
 }
+
+.flx{
+    display:flex;
+}
+
+
+
+.btn {
+    font-size: 1.1rem;
+    padding: .7rem !important;
+    background: var(--c1);
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    border-radius: 5px;
+    width: fit-content !important;
+}
+
+    .btn:hover {
+        background: var(--primary);
+        color: var(--c1);
+    }
+
 /*----End Globle----*/
 
 /*----form css----*/
@@ -57,14 +87,27 @@
     width: fit-content;
     border-radius: 10px;
     text-align: center;
-    padding: 1rem;
+    padding: 2rem;
+    filter:blur(10%);
+    backdrop-filter:blur(50px)!important;
+    height:100%;
 }
 
-    .frm h2 {
-        color: var(--primary);
-    }
+p.header {
+    color: var(--dark);
+    margin:0 auto 2rem auto;
+    font-weight: 999;
+    text-decoration: blink;
+    text-align: center;
+    width:fit-content;
+    border-bottom:2px solid white;
+    padding:0rem 2rem;
+    font-size: 3rem;
+    text-shadow: 2px 2px 2px white,-2px -2px 2px white;
+   backdrop-filter: blur(250px);
+}
 
-    .frm input[type=text] {
+    .frm input {
         border: none;
         background: var(--c2);
         padding: .5rem;
@@ -75,37 +118,35 @@
     }
 
     .frm table {
-        border-spacing: 1.5rem;
+        border-spacing: 1rem;
         text-align: left;
+        width:fit-content
     }
-
+    .frm .tbl2 th{
+        width:max-content;
+    }
         .frm table th {
             font-weight: 100;
+            width:100%;
         }
 
-    .frm .dropd {
+    .frm .dropd,.frm select{
         color: var(--primary);
         outline: none;
-        padding: .3rem;
+        padding: 0.3rem;
         border: none;
         background: var(--c2);
         border-radius: 5px;
     }
-
-.radio {
+.frm  input[type=radio] {
     accent-color: var(--primary);
+    width: unset !important;
+    text-align:start !important;
 }
 
-.btn {
-    font-size: 1.1rem;
-    padding: .5rem;
-    background: var(--c1);
-    border: 1px solid var(--primary);
-    color: var(--primary);
-    border-radius: 5px;
-}
 
-    .btn:hover {
-        background: var(--primary);
-        color: var(--c1);
-    }
+.workerimg{
+    height:60vh;
+    width:auto;
+    right:0;
+}
