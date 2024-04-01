@@ -6,55 +6,62 @@
 <head runat="server">
     <link rel="stylesheet" href="../css/a.css" />
     <title></title>
+ <style>
+      
+        body{
+            background-image:url("../img/bga.jpg");
+            background-size:cover;
+        }
+    </style>
 </head>
 <body>
-    <form id="form1" runat="server">
-        <div class="fcenter frm  shadow1">
-            <h2>Welcome</h2>
+     <form id="form1" runat="server"  class=" fcenter" >
+        <p class="header lcenter">Welcome</p>
+        <div class="  brdW frm flx ">
+           
             <table>
-               <tr>
-                <th> <asp:Label ID="lbl_unm" runat="server"  Text="Username"></asp:Label> </th>
-                <td> <asp:TextBox ID="txt_unm" class="bdr" runat="server"></asp:TextBox> </td>
-            </tr>
+                <tr>
+                    <th> <asp:Label ID="lbl_unm" runat="server"  Text="Username"></asp:Label> </th>
+                    <td> <asp:TextBox ID="txt_unm"  runat="server"></asp:TextBox> </td>
+                </tr>
         
-            <tr>
-                <th> <asp:Label ID="lbl_fnm" runat="server" Text="Fullname"></asp:Label> </th>
-                <td> <asp:TextBox ID="txt_fnm" class="bdr" runat="server"></asp:TextBox> 
+                <tr>
+                    <th> Fullname </th>
+                    <td> <asp:TextBox ID="txt_fnm"  runat="server"></asp:TextBox> 
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator1" ControlToValidate="txt_fnm" runat="server" ErrorMessage="RequiredFieldValidator"></asp:RequiredFieldValidator>
-                </td>
-            </tr>
+                    </td>
+                </tr>
 
-            <tr>
-                <th><asp:Label ID="lbl_gn" runat="server" Text="Gender"></asp:Label>  </th>
-                <td> <asp:RadioButtonList ID="Gender" runat="server" RepeatDirection="Horizontal">
-                    <asp:ListItem>Male</asp:ListItem> 
-                    <asp:ListItem>Female</asp:ListItem>
-                    </asp:RadioButtonList> </td>
-            </tr>
+                <tr>
+                    <th><asp:Label ID="lbl_gn" runat="server" Text="Gender"></asp:Label>  </th>
+                    <td> <asp:RadioButton ID="male" runat="server" Text="Male" GroupName="gender" Checked="True" CssClass="radio" />&nbsp; <asp:RadioButton ID="female" Text="Female" GroupName="gender" runat="server" CssClass="radio"  /></td>
+                </tr>
 
-            <tr>
-                <th> <asp:Label ID="lbl_no" runat="server" Text="Contect no"></asp:Label> </th>
-                <td> <asp:TextBox ID="txt_no" class="bdr"  runat="server" TextMode="Phone"></asp:TextBox> </td>
-            </tr>
+                <tr>
+                    <th> Contect no </th>
+                    <td><asp:TextBox ID="txt_no" runat="server" TextMode="Phone"></asp:TextBox> </td>
+                </tr>
 
-            <tr>
-                <th class="auto-style1"> <asp:Label ID="lbl_eml" runat="server" Text="Email Id"></asp:Label> </th>
-                <td class="auto-style1"> <asp:TextBox ID="txt_eml" class="bdr" runat="server" TextMode="Email"></asp:TextBox> 
+                <tr>
+                    <th> Email Id </th>
+                    <td> <asp:TextBox ID="txt_eml"  runat="server" TextMode="Email"></asp:TextBox> 
                     <asp:RegularExpressionValidator ID="RegularExpressionValidator1" ControlToValidate="txt_eml" runat="server" ErrorMessage="RegularExpressionValidator" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" Display="None" Height="0px" Width="86px"></asp:RegularExpressionValidator>
-                </td>
-            </tr>
+                    </td>
+                </tr>
 
-            <tr>
-                <th> <asp:Label ID="lbl_ps" runat="server" Text="Password"></asp:Label> </th>
-                <td> <asp:TextBox ID="txt_ps" class="bdr" runat="server" TextMode="Password"></asp:TextBox> </td>
-            </tr>
+                <tr>
+                    <th> <asp:Label ID="lbl_ps" runat="server" Text="Password"></asp:Label> </th>
+                    <td> <asp:TextBox ID="txt_ps" class="bdr" runat="server" TextMode="Password"></asp:TextBox> </td>
+                </tr>
 
-            <tr>
-                <th> <asp:Label ID="lbl_cp" runat="server" Text="Conform Password"></asp:Label> </th>
-                <td> <asp:TextBox ID="txt_cp" class="bdr" runat="server" TextMode="Password" ValidateRequestMode="Enabled"></asp:TextBox> 
+                <tr>
+                    <th> <asp:Label ID="lbl_cp" runat="server" Text="Conform Password"></asp:Label> </th>
+                    <td> <asp:TextBox ID="txt_cp"  runat="server" TextMode="Password" ValidateRequestMode="Enabled"></asp:TextBox> 
                     <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToValidate="txt_cp" ControlToCompare="txt_ps" ErrorMessage="CompareValidator"></asp:CompareValidator>
                 </td>
             </tr>
+            </table>
+            <table class="tbl2">
 
             <tr>
                 <th> <asp:Label ID="lbl_drp_service" runat="server"  Text="Service"></asp:Label> </th>
@@ -99,17 +106,17 @@
 
 
             <tr>
-                <th> <asp:Label ID="lbl_ur_pic" runat="server" Text="Upload your photo"></asp:Label> </th>
+                <th> <asp:Label ID="lbl_ur_pic" runat="server" Text="Photo"></asp:Label> </th>
                 <td> <asp:FileUpload ID="flu_ur_img" runat="server" /> </td>
             </tr>
 
              <tr>
-                <th> <asp:Label ID="lbl_skill_cer" runat="server" Text="Upload your skill certificate"></asp:Label> </th>
+                <th> <asp:Label ID="lbl_skill_cer" runat="server" Text="Skill certificate"></asp:Label> </th>
                 <td> <asp:FileUpload ID="flu_skill_img" runat="server" />  </td>
             </tr>
 
              <tr>
-                <th> <asp:Label ID="lbl_exp_cer" runat="server" Text="Upload your experiance certificate"></asp:Label> </th>
+                <th> <asp:Label ID="lbl_exp_cer" runat="server" Text="Experiance certificate"></asp:Label> </th>
                 <td> <asp:FileUpload ID="flu_exp_img" runat="server" /> </td>
             </tr>
 
@@ -117,6 +124,9 @@
                 <td>  <asp:Button ID="submit" runat="server" CssClass="btn" Text="Submit" OnClick="Button1_Click" /> </td>
             </tr>
             </table>
+             <div>
+               <asp:Image runat="server" CssClass="workerimg" src="../img/worker.png" />
+            </div>
            
 
 
