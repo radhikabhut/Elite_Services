@@ -245,6 +245,7 @@
     <Content Include="lib\waypoints\waypoints.min.js" />
     <Content Include="lib\wow\wow.js" />
     <Content Include="lib\wow\wow.min.js" />
+    <Content Include="Show_Worker.aspx" />
     <Content Include="U_Login.aspx" />
     <Content Include="U_Regi.aspx" />
     <Content Include="Web.config" />
@@ -302,6 +303,13 @@
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Show_Worker.aspx.cs">
+      <DependentUpon>Show_Worker.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Show_Worker.aspx.designer.cs">
+      <DependentUpon>Show_Worker.aspx</DependentUpon>
+    </Compile>
     <Compile Include="userSide.Master.cs">
       <DependentUpon>userSide.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

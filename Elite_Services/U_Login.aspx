@@ -10,13 +10,15 @@
 
          body{
              background-image:url("../img/loginbg.jpg");
+             background-size:cover;
          }
     </style>
 </head>
 <body>
-    <form id="form1" runat="server">
-         <div class="fcenter frm  shadow1">
-             <h2> Login Your  Self </h2><br/>
+    <form id="form1" runat="server" class="fcenter">
+        <p class="header lcenter">Welcome</p>
+         <div class="brdW frm flx">
+            <br/>
         <table>
                  <tr>
                      <th>Emial:</th>
@@ -25,11 +27,11 @@
 
                 <tr>
                     <th>Password:</th>
-                    <td> <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox> </td>
+                    <td> <asp:TextBox ID="txt_ps" runat="server"></asp:TextBox> </td>
                 </tr>
              <tr>
                 <td colspan="2" rowspan="2" style="text-align: right;">  
-                    <asp:Button ID="submit"  CssClass="submit" runat="server"  Text="Submit" />
+                    <asp:Button ID="submit"  CssClass="submit" runat="server"  Text="Submit" OnClick="submit_Click" />
                     
 <%--                    <input type="submit" class="submit">  --%>
                 </td>

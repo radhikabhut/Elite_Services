@@ -14,9 +14,7 @@
             <table>
                  <tr>
                 <th>      
-                    <asp:Label ID="lbl_unm" runat="server" class="ulabel" Text="User Name"></asp:Label>
-                    <%--<label for="User Name" class="ulabel">Username:</label>--%>
-                </th>
+                    <asp:Label ID="lbl_unm" runat="server" Text="User Name"></asp:Label> </th>
                 <td>       
                     <asp:TextBox ID="txt_unm"  class="uinput" runat="server"></asp:TextBox>
                     <%--                    <input type="text" class="uinput" id="username" required>--%>

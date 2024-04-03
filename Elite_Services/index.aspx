@@ -63,6 +63,20 @@
     <div>
         
     </div>
+    <center>
+   
+
+        <div>
+            <asp:DropDownList ID="DDArea" runat="server" DataSourceID="Area" DataTextField="Area_Name" DataValueField="Id"></asp:DropDownList>
+        
+            <asp:SqlDataSource ID="Area" runat="server" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\elite_db.mdf;Integrated Security=True" ProviderName="System.Data.SqlClient" SelectCommand="SELECT * FROM [Area_List_tbl]"></asp:SqlDataSource>
+        
+        <asp:DropDownList ID="DDService" runat="server" DataSourceID="Service" DataTextField="Service_Name" DataValueField="Id">
+        </asp:DropDownList>
+            <asp:SqlDataSource ID="Service" runat="server" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\elite_db.mdf;Integrated Security=True" ProviderName="System.Data.SqlClient" SelectCommand="SELECT * FROM [Service_List_tbl]"></asp:SqlDataSource>
+            <asp:Button ID="submit" runat="server" Text="search" OnClick="submit_Click" />
+        </div>
+    </center>
 
     <!-- Feature Start -->
     <div class="container-xxl py-5">
@@ -109,6 +123,7 @@
     </div>
     <!-- Feature Start -->
 
+  
 
 
     <!-- About Start -->
