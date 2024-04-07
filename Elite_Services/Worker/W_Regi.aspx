@@ -65,7 +65,7 @@
 
             <tr>
                 <th> <asp:Label ID="lbl_drp_service" runat="server"  Text="Service"></asp:Label> </th>
-                <td> <asp:DropDownList ID="drp_service" CssClass="bdr" runat="server">
+                <td> <asp:DropDownList ID="drp_service" CssClass="bdr" runat="server" DataSourceID="AreaTbl" DataTextField="Area_Name" DataValueField="Id">
                     <asp:ListItem>--Select Service--</asp:ListItem>
                     <asp:ListItem>Electricians</asp:ListItem>
                     <asp:ListItem>Painter</asp:ListItem>
@@ -74,13 +74,14 @@
                     <asp:ListItem>Cleaning &amp; Disinfection</asp:ListItem>
                     <asp:ListItem>Appliance Repair</asp:ListItem>
                     </asp:DropDownList> 
+                    <asp:SqlDataSource ID="AreaTbl" runat="server" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\elite_db.mdf;Integrated Security=True" ProviderName="System.Data.SqlClient" SelectCommand="SELECT * FROM [Area_List_tbl]"></asp:SqlDataSource>
                     <br />
                 </td>
             </tr>
             <br />
             <tr>
                 <th> <asp:Label ID="lbl_drp_area" runat="server" Text="Area"></asp:Label> </th>
-                <td> <asp:DropDownList ID="drp_area" CssClass="bdr" runat="server">
+                <td> <asp:DropDownList ID="drp_area" CssClass="bdr" runat="server" DataSourceID="serviceTbl" DataTextField="Service_Name" DataValueField="Id">
                     <asp:ListItem>--Select Area--</asp:ListItem>
                     <asp:ListItem>Arya Nagar</asp:ListItem>
                     <asp:ListItem>Gandhigram</asp:ListItem>
@@ -95,6 +96,7 @@
                     <asp:ListItem>Virpa Nagar</asp:ListItem>
                     <asp:ListItem>Vaishali Nagar</asp:ListItem>
                     </asp:DropDownList>
+                    <asp:SqlDataSource ID="serviceTbl" runat="server" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\elite_db.mdf;Integrated Security=True" ProviderName="System.Data.SqlClient" SelectCommand="SELECT * FROM [Service_List_tbl]"></asp:SqlDataSource>
                     <br />
                 </td>
             </tr>
@@ -121,7 +123,7 @@
             </tr>
 
             <tr>
-                <td>  <asp:Button ID="submit" runat="server" CssClass="btn" Text="Submit" OnClick="Button1_Click" /> </td>
+                <td>  <asp:Button ID="submit" runat="server" CssClass="btnn" Text="Submit" OnClick="Button1_Click" /> </td>
             </tr>
             </table>
              <div>

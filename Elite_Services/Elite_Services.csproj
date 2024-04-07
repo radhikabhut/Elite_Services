@@ -45,7 +45,6 @@
   <ItemGroup>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\lib\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
-      <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Web.DynamicData" />
@@ -156,18 +155,17 @@
     <Content Include="admin\assets\lineicons\style.css" />
     <Content Include="admin\form_component.html" />
     <Content Include="admin\gallery.html" />
-    <Content Include="admin\get.aspx" />
     <Content Include="admin\Index.aspx" />
     <Content Include="admin\lock_screen.html" />
     <Content Include="admin\login.html" />
     <Content Include="admin\morris.html" />
-    <Content Include="admin\p1.aspx" />
     <Content Include="admin\responsive_table.html" />
     <Content Include="admin\Service_List.aspx" />
     <Content Include="App_Data\elite_db.mdf" />
     <Content Include="App_Data\elite_db_log.ldf">
       <DependentUpon>elite_db.mdf</DependentUpon>
     </Content>
+    <Content Include="booking.aspx" />
     <Content Include="css\a.css" />
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\style.css" />
@@ -244,11 +242,12 @@
     <Content Include="lib\waypoints\waypoints.min.js" />
     <Content Include="lib\wow\wow.js" />
     <Content Include="lib\wow\wow.min.js" />
-    <Content Include="Show_Worker.aspx" />
     <Content Include="U_Login.aspx" />
     <Content Include="U_Regi.aspx" />
     <Content Include="Web.config" />
     <Content Include="Worker\W_Regi.aspx" />
+    <Content Include="worker_list.aspx" />
+    <Content Include="worker_profile.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="admin\Area_List.aspx.cs">
@@ -258,26 +257,12 @@
     <Compile Include="admin\Area_List.aspx.designer.cs">
       <DependentUpon>Area_List.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\get.aspx.cs">
-      <DependentUpon>get.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="admin\get.aspx.designer.cs">
-      <DependentUpon>get.aspx</DependentUpon>
-    </Compile>
     <Compile Include="admin\Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="admin\Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="admin\p1.aspx.cs">
-      <DependentUpon>p1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="admin\p1.aspx.designer.cs">
-      <DependentUpon>p1.aspx</DependentUpon>
     </Compile>
     <Compile Include="admin\Service_List.aspx.cs">
       <DependentUpon>Service_List.aspx</DependentUpon>
@@ -293,6 +278,13 @@
     <Compile Include="admin\workerSide.Master.designer.cs">
       <DependentUpon>workerSide.Master</DependentUpon>
     </Compile>
+    <Compile Include="booking.aspx.cs">
+      <DependentUpon>booking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="booking.aspx.designer.cs">
+      <DependentUpon>booking.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Class1.cs" />
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
@@ -302,13 +294,6 @@
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Show_Worker.aspx.cs">
-      <DependentUpon>Show_Worker.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Show_Worker.aspx.designer.cs">
-      <DependentUpon>Show_Worker.aspx</DependentUpon>
-    </Compile>
     <Compile Include="userSide.Master.cs">
       <DependentUpon>userSide.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -336,6 +321,20 @@
     </Compile>
     <Compile Include="Worker\W_Regi.aspx.designer.cs">
       <DependentUpon>W_Regi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="worker_list.aspx.cs">
+      <DependentUpon>worker_list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="worker_list.aspx.designer.cs">
+      <DependentUpon>worker_list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="worker_profile.aspx.cs">
+      <DependentUpon>worker_profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="worker_profile.aspx.designer.cs">
+      <DependentUpon>worker_profile.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -501,6 +500,13 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets'))" />
+  </Target>
   <!-- <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
@@ -508,7 +514,6 @@
     <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
     <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets'))" />
   </Target> -->
-  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

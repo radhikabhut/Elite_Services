@@ -42,15 +42,6 @@ namespace Elite_Services.Worker
         protected global::System.Web.UI.WebControls.TextBox txt_unm;
 
         /// <summary>
-        /// lbl_fnm control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_fnm;
-
-        /// <summary>
         /// txt_fnm control.
         /// </summary>
         /// <remarks>
@@ -78,22 +69,22 @@ namespace Elite_Services.Worker
         protected global::System.Web.UI.WebControls.Label lbl_gn;
 
         /// <summary>
-        /// Gender control.
+        /// male control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList Gender;
+        protected global::System.Web.UI.WebControls.RadioButton male;
 
         /// <summary>
-        /// lbl_no control.
+        /// female control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_no;
+        protected global::System.Web.UI.WebControls.RadioButton female;
 
         /// <summary>
         /// txt_no control.
@@ -103,15 +94,6 @@ namespace Elite_Services.Worker
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txt_no;
-
-        /// <summary>
-        /// lbl_eml control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_eml;
 
         /// <summary>
         /// txt_eml control.
@@ -195,6 +177,15 @@ namespace Elite_Services.Worker
         protected global::System.Web.UI.WebControls.DropDownList drp_service;
 
         /// <summary>
+        /// AreaTbl control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource AreaTbl;
+
+        /// <summary>
         /// lbl_drp_area control.
         /// </summary>
         /// <remarks>
@@ -211,6 +202,15 @@ namespace Elite_Services.Worker
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList drp_area;
+
+        /// <summary>
+        /// serviceTbl control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource serviceTbl;
 
         /// <summary>
         /// lbl_add control.

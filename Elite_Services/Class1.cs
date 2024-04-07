@@ -101,12 +101,39 @@ namespace Elite_Services
         public DataSet selectw(string area,string ser)
         {
             getcon();
+            string sql = "select * from W_Regi_tbl where Area=" + area + " and Service=" + ser + " ";
 
-            da = new SqlDataAdapter("select * from W_Regi_tbl where Area="+area+" and Service="+ser+" ", con);
+            da = new SqlDataAdapter(sql, con);
             ds = new DataSet();
             da.Fill(ds);
             return ds;
         }
+
+        public DataSet winfo(int id)
+        {
+            using (SqlConnection con = new SqlConnection(s))
+            {
+                string query = "SELECT * FROM W_Regi_tbl WHERE Id = @Id";
+                SqlCommand cmd = new SqlCommand(query, con);
+                cmd.Parameters.AddWithValue("@Id", id);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataSet ds = new DataSet();
+
+                try
+                {
+                    con.Open();
+                    da.Fill(ds);
+                }
+                catch (Exception ex)
+                {
+                    // Handle exception
+                    Console.WriteLine("Error: " + ex.Message);
+                }
+
+                return ds;
+            }
+        }
+
 
 
 

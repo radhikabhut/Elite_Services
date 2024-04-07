@@ -16,7 +16,7 @@ namespace Elite_Services
 
         protected void submit_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Show_Worker.aspx?area='" + DDArea.SelectedValue + "'&service='" + DDService.SelectedValue + "'");
+            Response.Redirect("worker_list.aspx?area='" +DDArea.SelectedValue + "'&service='" + DDService.SelectedValue + "'");
 
         }
     }

@@ -49,7 +49,11 @@ namespace Elite_Services.Worker
             img_upload();
             if (submit.Text == "Submit")
             {
-                cmd = new SqlCommand("insert into W_Regi_tbl(User_Name,Full_Name,Gender,Contect_no,Email_Id,Password,Service,Area,Address,Worker_Image,Worker_skill,Worker_Experiance)values ('" + txt_unm.Text + "','" + txt_fnm.Text + "','" + Gender.SelectedValue + "','" + txt_no.Text + "','" + txt_eml.Text + "','" + txt_ps.Text + "','" + drp_service.SelectedValue + "','" + drp_area.SelectedValue + "','" + txt_add.Text + "','" + wi + "','" + ws + "','" + we + "')", con);
+                String gd = "";
+                if (male.Checked)
+                    gd = male.Text;
+                else gd=female.Text;
+                cmd = new SqlCommand("insert into W_Regi_tbl(User_Name,Full_Name,Gender,Contect_no,Email_Id,Password,Service,Area,Address,Worker_Image,Worker_skill,Worker_Experiance)values ('" + txt_unm.Text + "','" + txt_fnm.Text + "','" + gd + "','" + txt_no.Text + "','" + txt_eml.Text + "','" + txt_ps.Text + "','" + drp_service.SelectedValue + "','" + drp_area.SelectedValue + "','" + txt_add.Text + "','" + wi + "','" + ws + "','" + we + "')", con);
                 cmd.ExecuteNonQuery();
                 Response.Redirect("WLogin.aspx");
 
