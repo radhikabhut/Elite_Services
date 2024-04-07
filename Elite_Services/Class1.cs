@@ -111,27 +111,12 @@ namespace Elite_Services
 
         public DataSet winfo(int id)
         {
-            using (SqlConnection con = new SqlConnection(s))
-            {
-                string query = "SELECT * FROM W_Regi_tbl WHERE Id = @Id";
-                SqlCommand cmd = new SqlCommand(query, con);
-                cmd.Parameters.AddWithValue("@Id", id);
-                SqlDataAdapter da = new SqlDataAdapter(cmd);
-                DataSet ds = new DataSet();
-
-                try
-                {
-                    con.Open();
-                    da.Fill(ds);
-                }
-                catch (Exception ex)
-                {
-                    // Handle exception
-                    Console.WriteLine("Error: " + ex.Message);
-                }
-
-                return ds;
-            }
+            getcon();
+            da = new SqlDataAdapter("SELECT * FROM W_Regi_tbl WHERE Id ="+id,con);
+            ds = new DataSet();
+            da.Fill(ds);
+            
+            return ds;
         }
 
 

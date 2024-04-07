@@ -1,10 +1,19 @@
 ﻿using System;
 using System.Data;
+using System.Data.SqlClient;
 
 namespace Elite_Services
 {
     public partial class worker_profile : System.Web.UI.Page
     {
+        Class1 cs;
+        SqlConnection con;
+        DataSet ds;
+        void getcon()
+        {
+            cs = new Class1();
+            con = cs.getcon();
+        }
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
@@ -14,17 +23,15 @@ namespace Elite_Services
                 {
                     // Get the value of the "Id" parameter from the URL
                     int workerId = Convert.ToInt32(Request.QueryString["Id"]);
-
-                    // Create an instance of Class1
-                    Class1 objclass = new Class1();
-
-                    // Call the winfo method with the workerId parameter
-                    DataSet workerData = objclass.winfo(workerId);
+                    getcon();
+                    ds = new DataSet();
+                    
+                    ds=cs.winfo(workerId);
 
                     // Check if the DataSet contains any data
-                    if (workerData != null && workerData.Tables.Count > 0 && workerData.Tables[0].Rows.Count > 0)
+                    if (ds != null && ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
                     {
-                        DataRow row = workerData.Tables[0].Rows[0];
+                        DataRow row = ds.Tables[0].Rows[0];
                         // Fill data into textboxes
                         txt_fnm.Text = row["Full_Name"].ToString();
                         txt_gen.Text = row["Gender"].ToString();
