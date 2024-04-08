@@ -161,6 +161,7 @@
     <Content Include="admin\morris.html" />
     <Content Include="admin\responsive_table.html" />
     <Content Include="admin\Service_List.aspx" />
+    <Content Include="admin\A_Login.aspx" />
     <Content Include="App_Data\elite_db.mdf" />
     <Content Include="App_Data\elite_db_log.ldf">
       <DependentUpon>elite_db.mdf</DependentUpon>
@@ -277,6 +278,13 @@
     </Compile>
     <Compile Include="admin\workerSide.Master.designer.cs">
       <DependentUpon>workerSide.Master</DependentUpon>
+    </Compile>
+    <Compile Include="admin\A_Login.aspx.cs">
+      <DependentUpon>A_Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\A_Login.aspx.designer.cs">
+      <DependentUpon>A_Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="booking.aspx.cs">
       <DependentUpon>booking.aspx</DependentUpon>
