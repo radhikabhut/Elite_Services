@@ -18,7 +18,7 @@ namespace Elite_Services.admin
         {
             if( txt_id.Text=="Pina" && txt_pass.Text == "123123")
             {
-                Response.Redirect("admin/Index.aspx");
+                Response.Redirect("Index.aspx");
             } 
             else
             {

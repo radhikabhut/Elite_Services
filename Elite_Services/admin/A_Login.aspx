@@ -33,7 +33,7 @@
         <div id="login-page">
 	  	<div class="container">
 	  	
-		      <form class="form-login" action="index.html" runat="server" >
+		      <form class="form-login"  runat="server" >
 		        <h2 class="form-login-heading">sign in now</h2>
 		        <div class="login-wrap">
 					<asp:TextBox ID="txt_id" runat="server" class="form-control" placeholder="admin id/name" autofocus></asp:TextBox>
@@ -47,7 +47,7 @@
 		
 		                </span>
 		            </label>
-					<asp:Button ID="Button1" class="btn btn-theme btn-block" href="Index.aspx"  runat="server" Text="Sign In" OnClick="Button1_Click" /><i class="fa fa-lock"></i>
+					<asp:Button ID="Button1" class="btn btn-theme btn-block"  runat="server" Text="Sign In" OnClick="Button1_Click" /><i class="fa fa-lock"></i>
 <%--		            <button class="btn btn-theme btn-block" href="index.html" type="submit"><i class="fa fa-lock"></i> SIGN IN</button>--%>
 		            <hr>
 		            
