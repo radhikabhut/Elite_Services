@@ -15,13 +15,22 @@ namespace Elite_Services
     {
 
         /// <summary>
+        /// Image1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image Image1;
+
+        /// <summary>
         /// txt_fnm control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_fnm;
+        protected global::System.Web.UI.WebControls.Label txt_fnm;
 
         /// <summary>
         /// txt_gen control.
@@ -30,7 +39,7 @@ namespace Elite_Services
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_gen;
+        protected global::System.Web.UI.WebControls.Label txt_gen;
 
         /// <summary>
         /// txt_no control.
@@ -39,7 +48,7 @@ namespace Elite_Services
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_no;
+        protected global::System.Web.UI.WebControls.Label txt_no;
 
         /// <summary>
         /// txt_serv control.
@@ -48,7 +57,7 @@ namespace Elite_Services
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_serv;
+        protected global::System.Web.UI.WebControls.Label txt_serv;
 
         /// <summary>
         /// txt_add control.
@@ -57,16 +66,7 @@ namespace Elite_Services
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_add;
-
-        /// <summary>
-        /// Image1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image1;
+        protected global::System.Web.UI.WebControls.Label txt_add;
 
         /// <summary>
         /// submit control.

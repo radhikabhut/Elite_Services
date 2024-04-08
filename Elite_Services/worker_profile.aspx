@@ -4,42 +4,48 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
     <p  class="header lcenter">worker profile</>
     
- <div class="  brdW frm flx ">
+ <div class="  brdW frm flx w60 ma jcsb">
      
-     <table class="tbl2" >
+     <table >
+     <div >
+         <asp:Image ID="Image1" Height="300px" Width="300px" runat="server" style="border-radius:50%; border-bottom: 3px solid black; border-right: 3px solid black; padding:5px; " />
+     </div>
+     </table>
+         <style>
+             .tbl2{
+             }
+             .tbl2 th{font-weight:700 !important;}
+         </style>
+     <table class="tbl2 w15r" >
                 <tr>
-                    <th> Fullname </th>
-                    <td> <asp:TextBox ID="txt_fnm"  runat="server"></asp:TextBox> </td>
+                    <th> Fullname : &nbsp </th>
+                    <td><asp:Label ID="txt_fnm" runat="server" Text="Label"></asp:Label></td>
                 </tr>
                 
                 <tr>
-                    <th> Gender </th>
-                    <td> <asp:TextBox ID="txt_gen" runat="server"></asp:TextBox> </td>
+                    <th> Gender : &nbsp </th>
+                    <td><asp:Label ID="txt_gen" runat="server" Text="Label"></asp:Label></td></tr>
+
+                <tr>
+                    <th> Mobile no : &nbsp </th>
+                    <td>
+                        <asp:Label ID="txt_no" runat="server" Text="Label"></asp:Label></td>
                 </tr>
 
                 <tr>
-                    <th> Mobile no </th>
-                    <td> <asp:TextBox ID="txt_no" runat="server"></asp:TextBox> </td>
-                </tr>
-
-                <tr>
-                    <th> Service </th>
-                    <td> <asp:TextBox ID="txt_serv" runat="server"></asp:TextBox> </td>
+                    <th> Service : &nbsp </th>
+                    <td>
+                        <asp:Label ID="txt_serv" runat="server" Text="Label"></asp:Label></td>
                 </tr>
         
                 <tr>
-                    <th> Address </th>
-                    <td> <asp:TextBox ID="txt_add" runat="server"></asp:TextBox> </td>
+                    <th> Address : &nbsp </th>
+                    <td> <asp:Label ID="txt_add" runat="server" Text="Label"></asp:Label></td>
                 </tr>
      </table>
-     <table >
-     <div >
-         <asp:Image ID="Image1" Height="250px" Width="250px" runat="server" />
-     </div>
-     </table>
+    <asp:Button ID="submit" runat="server"  CssClass="btnn  lcenter" Text="Book" OnClick="submit_Click" />
        
  </div>
 
-    <asp:Button ID="submit" runat="server"  CssClass="btnn" Text="Book" OnClick="submit_Click" />
 </asp:Content>
 
