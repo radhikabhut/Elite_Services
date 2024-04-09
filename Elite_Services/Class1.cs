@@ -130,14 +130,7 @@ namespace Elite_Services
 
             return ds;
         }
-        public void User_Update(int id, string unm, string flnm,string gender,)
-        {
-            cmd = new SqlCommand("update U_Regi_tbl set User_Name='"+fnm.T+"',Full_Name= ", con);
-            cmd.ExecuteNonQuery();
-        }
-
-
-        Area_Name='" + Area + "' 
+       
 
     }
 }

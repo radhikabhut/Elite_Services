@@ -54,6 +54,7 @@ namespace Elite_Services
                     Session["Email_Id"] = txt_eml.Text;
                     Session["City"] = (ds.Tables[0].Rows[0][6]).ToString();
                     Session["Address"] = (ds.Tables[0].Rows[0][7]).ToString();
+                    Session["User_Image"] = (ds.Tables[0].Rows[0][8].ToString());
 
                     Response.Redirect("index.aspx");
                 }

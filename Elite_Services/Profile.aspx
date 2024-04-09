@@ -7,7 +7,7 @@
  <div class="  brdW frm flx w60 ma jcsb">
      
      <table >
-     <div >
+     <div>
          <asp:Image ID="Image1" Height="300px" Width="300px" runat="server" style="border-radius:50%; border-bottom: 3px solid black; border-right: 3px solid black; padding:5px; " />
      </div>
      </table>
@@ -49,8 +49,10 @@
                     <td> <asp:Label ID="txt_add" runat="server" Text="Label"></asp:Label></td>
                 </tr>
      </table>
-    <asp:Button ID="submit" runat="server"  CssClass="btnn  lcenter" Text="Book" OnClick="submit_Click" />
-       
- </div>
+         <asp:Button ID="Button1" runat="server"  CssClass="btnn  lcenter" Text="update"  style="height: 24px" />
+
+    
+    
+</div>
 </asp:Content>
 
