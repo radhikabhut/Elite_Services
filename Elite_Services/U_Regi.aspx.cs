@@ -15,6 +15,7 @@ namespace Elite_Services
         SqlConnection con;
         SqlCommand cmd;
         Class1 cs;
+        string wi;
         void startcon()
         {
             cs = new Class1();
@@ -24,13 +25,24 @@ namespace Elite_Services
         {
             startcon();
         }
+        void img_upload()
+        {
+            wi = "imgs" + flu_ur_img.FileName;
+            flu_ur_img.SaveAs(Server.MapPath(wi));
 
+           
+
+        }
         protected void submit_Click(object sender, EventArgs e)
         {
             startcon();
+            img_upload();
+            con = cs.getcon();
             if (submit.Text == "Submit")
             {
-                cmd = new SqlCommand("insert into U_Regi_tbl(User_Name,Full_Name,Gender,Mobile,Email_Id,Password,City,Address)values ('" + txt_unm.Text + "','" + txt_fnm.Text + "','" + gender.SelectedValue + "','" + txt_mo.Text + "','" + txt_eml.Text + "','" + txt_ps.Text + "','" + txt_ct.Text + "','" + txt_add.Text + "')", con);
+               
+               
+                cmd = new SqlCommand("insert into U_Regi_tbl(User_Name,Full_Name,Gender,Mobile,Email_Id,Password,City,Address,User_Image)values ('" + txt_unm.Text + "','" + txt_fnm.Text + "','" + gender.SelectedValue + "','" + txt_mo.Text + "','" + txt_eml.Text + "','" + txt_ps.Text + "','" + txt_ct.Text + "','" + txt_add.Text + "','" + wi + "')", con);
                 cmd.ExecuteNonQuery();
                 Response.Redirect("U_Login.aspx");
 

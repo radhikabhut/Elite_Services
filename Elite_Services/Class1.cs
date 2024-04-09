@@ -121,9 +121,25 @@ namespace Elite_Services
             return ds;
         }
 
+        public DataSet uinfo(int id)
+        {
+            getcon();
+            da = new SqlDataAdapter("SELECT * FROM U_Regi_tbl WHERE Id =" + id, con);
+            ds = new DataSet();
+            da.Fill(ds);
+
+            return ds;
+        }
+        public void User_Update(int id, string unm, string flnm,string gender,)
+        {
+            cmd = new SqlCommand("update U_Regi_tbl set User_Name='"+fnm.T+"',Full_Name= ", con);
+            cmd.ExecuteNonQuery();
+        }
 
 
+        Area_Name='" + Area + "' 
 
     }
 }
+
     

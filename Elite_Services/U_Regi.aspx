@@ -122,6 +122,11 @@
                     <%--                    <textarea  id="address" class="uinput" rows="4" required></textarea>--%>
                 </td>
             </tr>
+
+            <tr>
+                <th> <asp:Label ID="lbl_ur_pic" runat="server" Text="Photo"></asp:Label> </th>
+                <td> <asp:FileUpload ID="flu_ur_img" runat="server" /> </td>
+            </tr>
             <tr>
                 <td colspan="2" rowspan="2" style="text-align: right;">  
                     <asp:Button ID="submit"  CssClass="btnn" runat="server"  Text="Submit" OnClick="submit_Click" />

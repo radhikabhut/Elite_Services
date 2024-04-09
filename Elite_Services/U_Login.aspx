@@ -27,7 +27,7 @@
 
                 <tr>
                     <th>Password:</th>
-                    <td> <asp:TextBox ID="txt_ps" runat="server"></asp:TextBox> </td>
+                    <td> <asp:TextBox ID="txt_ps" runat="server" TextMode="Password"></asp:TextBox> </td>
                 </tr>
              <tr>
                 <td colspan="2" rowspan="2" style="text-align: right;">  
