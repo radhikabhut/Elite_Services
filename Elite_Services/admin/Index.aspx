@@ -2,8 +2,9 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" runat="server" contentplaceholderid="ContentPlaceHolder2">
-   
+  
     <center>
+         <p><h2> Recently Booked Worker </h2> </p>
 
          <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False">
              <Columns>

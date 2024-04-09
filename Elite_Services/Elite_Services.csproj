@@ -142,6 +142,7 @@
     <Content Include="admin\lib\wow\wow.min.js" />
     <Content Include="admin\Service-List.aspx" />
     <Content Include="admin\User-List.aspx" />
+    <Content Include="admin\Worker-List.aspx" />
     <Content Include="App_Data\elite_db.mdf" />
     <Content Include="App_Data\elite_db_log.ldf">
       <DependentUpon>elite_db.mdf</DependentUpon>
@@ -273,6 +274,13 @@
     </Compile>
     <Compile Include="admin\User-List.aspx.designer.cs">
       <DependentUpon>User-List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Worker-List.aspx.cs">
+      <DependentUpon>Worker-List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Worker-List.aspx.designer.cs">
+      <DependentUpon>Worker-List.aspx</DependentUpon>
     </Compile>
     <Compile Include="Booking.aspx.cs">
       <DependentUpon>Booking.aspx</DependentUpon>
