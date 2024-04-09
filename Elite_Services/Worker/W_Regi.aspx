@@ -21,7 +21,7 @@
            
             <table>
                 <tr>
-                    <th> <asp:Label ID="lbl_unm" runat="server"  Text="Username"></asp:Label> </th>
+                    <th> Username </asp:Label> </th>
                     <td> <asp:TextBox ID="txt_unm"  runat="server"></asp:TextBox> </td>
                 </tr>
         

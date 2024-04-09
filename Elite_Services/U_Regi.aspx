@@ -4,13 +4,20 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-     <link rel="stylesheet" href="../css/a.css" />
+     <link rel="stylesheet" href="css/a.css" />
     <title></title>
+    <style>
+        body{
+            background-image:url(../img/ubg.jpg);
+            background-size:cover;
+        }
+    </style>
 </head>
 <body>
-    <form id="form1" runat="server"  >
-        <div class="fcenter frm flx shadow1">
-            <h2>Welcome</h2>
+    <form id="form1" runat="server" class="fcenter" >
+          <p class="header lcenter">Welcome</p>
+        <div class=" brdW flx frm">
+          
             <table>
                  <tr>
                 <th>      
@@ -117,7 +124,7 @@
             </tr>
             <tr>
                 <td colspan="2" rowspan="2" style="text-align: right;">  
-                    <asp:Button ID="submit"  CssClass="submit" runat="server"  Text="Submit" OnClick="submit_Click" />
+                    <asp:Button ID="submit"  CssClass="btnn" runat="server"  Text="Submit" OnClick="submit_Click" />
                     
 <%--                    <input type="submit" class="submit">  --%>
                 </td>

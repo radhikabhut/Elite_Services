@@ -35,7 +35,7 @@ namespace Elite_Services.admin
             if (e.CommandName == "cmd_dlt")
             {
                 int Id = Convert.ToInt32(e.CommandArgument);
-                cmd = new SqlCommand("delete  from U_Regi_tbl where Id =" + Id, con);
+                cmd = new SqlCommand("delete  from W_Regi_tbl where Id =" + Id, con);
                 cmd.ExecuteNonQuery();
                 Response.Redirect("Worker-List.aspx");
 
