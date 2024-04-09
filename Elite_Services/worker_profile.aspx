@@ -43,7 +43,7 @@
                     <td> <asp:Label ID="txt_add" runat="server" Text="Label"></asp:Label></td>
                 </tr>
      </table>
-    <asp:Button ID="submit" runat="server"  CssClass="btnn  lcenter" Text="Book" OnClick="submit_Click" />
+    <asp:Button ID="submit" runat="server"  CssClass="btnn  lcenter" Text="Book" OnClick="submit_Click" style="height: 24px" />
        
  </div>
 

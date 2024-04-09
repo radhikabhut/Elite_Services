@@ -65,108 +65,88 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="admin\Area_List.aspx" />
-    <Content Include="admin\assets\css\bootstrap.css" />
-    <Content Include="admin\assets\css\style-responsive.css" />
-    <Content Include="admin\assets\css\style.css" />
-    <Content Include="admin\assets\css\table-responsive.css" />
-    <Content Include="admin\assets\css\to-do.css" />
-    <Content Include="admin\assets\css\zabuto_calendar.css" />
-    <Content Include="admin\assets\font-awesome\css\font-awesome.css" />
-    <Content Include="admin\assets\font-awesome\fonts\fontawesome-webfont.svg" />
-    <Content Include="admin\assets\fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="admin\assets\img\blog-bg.jpg" />
-    <Content Include="admin\assets\img\checkbox-gray.png" />
-    <Content Include="admin\assets\img\elite-removebg-preview %281%29%281%29.png" />
-    <Content Include="admin\assets\img\friends\fr-01.jpg" />
-    <Content Include="admin\assets\img\friends\fr-02.jpg" />
-    <Content Include="admin\assets\img\friends\fr-03.jpg" />
-    <Content Include="admin\assets\img\friends\fr-04.jpg" />
-    <Content Include="admin\assets\img\friends\fr-05.jpg" />
-    <Content Include="admin\assets\img\friends\fr-06.jpg" />
-    <Content Include="admin\assets\img\friends\fr-07.jpg" />
-    <Content Include="admin\assets\img\friends\fr-08.jpg" />
-    <Content Include="admin\assets\img\friends\fr-09.jpg" />
-    <Content Include="admin\assets\img\friends\fr-10.jpg" />
-    <Content Include="admin\assets\img\friends\fr-11.jpg" />
-    <Content Include="admin\assets\img\instagram.jpg" />
-    <Content Include="admin\assets\img\login-bg.jpg" />
-    <Content Include="admin\assets\img\lorde.jpg" />
-    <Content Include="admin\assets\img\mask.png" />
-    <Content Include="admin\assets\img\ny.jpg" />
-    <Content Include="admin\assets\img\portfolio\port01.jpg" />
-    <Content Include="admin\assets\img\portfolio\port02.jpg" />
-    <Content Include="admin\assets\img\portfolio\port03.jpg" />
-    <Content Include="admin\assets\img\portfolio\port04.jpg" />
-    <Content Include="admin\assets\img\portfolio\port05.jpg" />
-    <Content Include="admin\assets\img\portfolio\port06.jpg" />
-    <Content Include="admin\assets\img\product.jpg" />
-    <Content Include="admin\assets\img\product.png" />
-    <Content Include="admin\assets\img\profile-01.jpg" />
-    <Content Include="admin\assets\img\profile-02.jpg" />
-    <Content Include="admin\assets\img\radio-gray.png" />
-    <Content Include="admin\assets\img\ui-danro.jpg" />
-    <Content Include="admin\assets\img\ui-divya.jpg" />
-    <Content Include="admin\assets\img\ui-sam.jpg" />
-    <Content Include="admin\assets\img\ui-sherman.jpg" />
-    <Content Include="admin\assets\img\ui-zac.jpg" />
-    <Content Include="admin\assets\img\weather.jpg" />
-    <Content Include="admin\assets\img\zoom.png" />
-    <Content Include="admin\assets\js\bootstrap-inputmask\bootstrap-inputmask.min.js" />
-    <Content Include="admin\assets\js\bootstrap-switch.js" />
-    <Content Include="admin\assets\js\bootstrap.min.js" />
-    <Content Include="admin\assets\js\calendar-conf-events.js" />
-    <Content Include="admin\assets\js\chart-master\Chart.js" />
-    <Content Include="admin\assets\js\chartjs-conf.js" />
-    <Content Include="admin\assets\js\common-scripts.js" />
-    <Content Include="admin\assets\js\easy-pie-chart.js" />
-    <Content Include="admin\assets\js\fancybox\jquery.fancybox.css" />
-    <Content Include="admin\assets\js\fancybox\jquery.fancybox.js" />
-    <Content Include="admin\assets\js\form-component.js" />
-    <Content Include="admin\assets\js\fullcalendar\bootstrap-fullcalendar.css" />
-    <Content Include="admin\assets\js\fullcalendar\fullcalendar.min.js" />
-    <Content Include="admin\assets\js\gritter-conf.js" />
-    <Content Include="admin\assets\js\gritter\css\jquery.gritter.css" />
-    <Content Include="admin\assets\js\gritter\css\jquery.gritter0.css" />
-    <Content Include="admin\assets\js\gritter\images\gritter-light.png" />
-    <Content Include="admin\assets\js\gritter\images\gritter-long.png" />
-    <Content Include="admin\assets\js\gritter\images\gritter.png" />
-    <Content Include="admin\assets\js\gritter\images\ie-spacer.gif" />
-    <Content Include="admin\assets\js\gritter\js\jquery.gritter.js" />
-    <Content Include="admin\assets\js\jquery-1.8.3.min.js" />
-    <Content Include="admin\assets\js\jquery-easy-pie-chart\jquery.easy-pie-chart.css" />
-    <Content Include="admin\assets\js\jquery-easy-pie-chart\jquery.easy-pie-chart.js" />
-    <Content Include="admin\assets\js\jquery-ui-1.9.2.custom.min.js" />
-    <Content Include="admin\assets\js\jquery.backstretch.min.js" />
-    <Content Include="admin\assets\js\jquery.dcjqaccordion.2.7.js" />
-    <Content Include="admin\assets\js\jquery.js" />
-    <Content Include="admin\assets\js\jquery.nicescroll.js" />
-    <Content Include="admin\assets\js\jquery.scrollTo.min.js" />
-    <Content Include="admin\assets\js\jquery.sparkline.js" />
-    <Content Include="admin\assets\js\jquery.tagsinput.js" />
-    <Content Include="admin\assets\js\jquery.ui.touch-punch.min.js" />
-    <Content Include="admin\assets\js\morris-conf.js" />
-    <Content Include="admin\assets\js\sparkline-chart.js" />
-    <Content Include="admin\assets\js\tasks.js" />
-    <Content Include="admin\assets\js\zabuto_calendar.js" />
-    <Content Include="admin\assets\lineicons\fonts\linecons.svg" />
-    <Content Include="admin\assets\lineicons\index.html" />
-    <Content Include="admin\assets\lineicons\lte-ie7.js" />
-    <Content Include="admin\assets\lineicons\style.css" />
-    <Content Include="admin\form_component.html" />
-    <Content Include="admin\gallery.html" />
+    <Content Include="admin\A-Login.aspx" />
+    <Content Include="admin\Area-List.aspx" />
+    <Content Include="admin\css\a.css" />
+    <Content Include="admin\css\bootstrap.min.css" />
+    <Content Include="admin\css\style.css" />
+    <Content Include="admin\fonts\flexslider-icon.svg" />
+    <Content Include="admin\fonts\fontawesome-webfont.svg" />
+    <Content Include="admin\fonts\OFL.txt" />
+    <Content Include="admin\fonts\slick.svg" />
+    <Content Include="admin\img\about.jpg" />
+    <Content Include="admin\img\bg1.jpg" />
+    <Content Include="admin\img\bg3.jpg" />
+    <Content Include="admin\img\bg4.jpg" />
+    <Content Include="admin\img\carousel-1.jpg" />
+    <Content Include="admin\img\carousel-2.jpg" />
+    <Content Include="admin\img\carousel-3.jpg" />
+    <Content Include="admin\img\feature.jpg" />
+    <Content Include="admin\img\footer.jpg" />
+    <Content Include="admin\img\gradiant.jpg" />
+    <Content Include="admin\img\logohz.svg" />
+    <Content Include="admin\img\portfolio-1.jpg" />
+    <Content Include="admin\img\portfolio-2.jpg" />
+    <Content Include="admin\img\portfolio-3.jpg" />
+    <Content Include="admin\img\portfolio-4.jpg" />
+    <Content Include="admin\img\portfolio-5.jpg" />
+    <Content Include="admin\img\portfolio-6.jpg" />
+    <Content Include="admin\img\quote.jpg" />
+    <Content Include="admin\img\search.jpg" />
+    <Content Include="admin\img\service-1.jpg" />
+    <Content Include="admin\img\service-2.jpg" />
+    <Content Include="admin\img\service-3.jpg" />
+    <Content Include="admin\img\service-4.jpg" />
+    <Content Include="admin\img\service-5.jpg" />
+    <Content Include="admin\img\service-6.jpg" />
+    <Content Include="admin\img\team-1.jpg" />
+    <Content Include="admin\img\team-2.jpg" />
+    <Content Include="admin\img\team-3.jpg" />
+    <Content Include="admin\img\team-4.jpg" />
+    <Content Include="admin\img\testimonial-1.jpg" />
+    <Content Include="admin\img\testimonial-2.jpg" />
+    <Content Include="admin\img\testimonial-3.jpg" />
+    <Content Include="admin\img\testimonial-4.jpg" />
+    <Content Include="admin\img\worker.jpg" />
     <Content Include="admin\Index.aspx" />
-    <Content Include="admin\lock_screen.html" />
-    <Content Include="admin\login.html" />
-    <Content Include="admin\morris.html" />
-    <Content Include="admin\responsive_table.html" />
-    <Content Include="admin\Service_List.aspx" />
-    <Content Include="admin\A_Login.aspx" />
+    <Content Include="admin\js\main.js" />
+    <Content Include="admin\lib\animate\animate.css" />
+    <Content Include="admin\lib\animate\animate.min.css" />
+    <Content Include="admin\lib\counterup\counterup.min.js" />
+    <Content Include="admin\lib\easing\easing.js" />
+    <Content Include="admin\lib\easing\easing.min.js" />
+    <Content Include="admin\lib\isotope\isotope.pkgd.js" />
+    <Content Include="admin\lib\isotope\isotope.pkgd.min.js" />
+    <Content Include="admin\lib\lightbox\css\lightbox.css" />
+    <Content Include="admin\lib\lightbox\css\lightbox.min.css" />
+    <Content Include="admin\lib\lightbox\images\close.png" />
+    <Content Include="admin\lib\lightbox\images\loading.gif" />
+    <Content Include="admin\lib\lightbox\images\next.png" />
+    <Content Include="admin\lib\lightbox\images\prev.png" />
+    <Content Include="admin\lib\lightbox\js\lightbox.js" />
+    <Content Include="admin\lib\lightbox\js\lightbox.min.js" />
+    <Content Include="admin\lib\lightbox\links.php" />
+    <Content Include="admin\lib\owlcarousel\assets\ajax-loader.gif" />
+    <Content Include="admin\lib\owlcarousel\assets\owl.carousel.css" />
+    <Content Include="admin\lib\owlcarousel\assets\owl.carousel.min.css" />
+    <Content Include="admin\lib\owlcarousel\assets\owl.theme.default.css" />
+    <Content Include="admin\lib\owlcarousel\assets\owl.theme.default.min.css" />
+    <Content Include="admin\lib\owlcarousel\assets\owl.theme.green.css" />
+    <Content Include="admin\lib\owlcarousel\assets\owl.theme.green.min.css" />
+    <Content Include="admin\lib\owlcarousel\assets\owl.video.play.png" />
+    <Content Include="admin\lib\owlcarousel\owl.carousel.js" />
+    <Content Include="admin\lib\owlcarousel\owl.carousel.min.js" />
+    <Content Include="admin\lib\waypoints\links.php" />
+    <Content Include="admin\lib\waypoints\waypoints.min.js" />
+    <Content Include="admin\lib\wow\wow.js" />
+    <Content Include="admin\lib\wow\wow.min.js" />
+    <Content Include="admin\Service-List.aspx" />
+    <Content Include="admin\User-List.aspx" />
     <Content Include="App_Data\elite_db.mdf" />
     <Content Include="App_Data\elite_db_log.ldf">
       <DependentUpon>elite_db.mdf</DependentUpon>
     </Content>
-    <Content Include="booking.aspx" />
+    <Content Include="Booking.aspx" />
     <Content Include="css\a.css" />
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\style.css" />
@@ -178,6 +158,7 @@
     <Content Include="img\bg1.jpg" />
     <Content Include="img\bg3.jpg" />
     <Content Include="img\bg4.jpg" />
+    <Content Include="img\cancel.png" />
     <Content Include="img\carousel-1.jpg" />
     <Content Include="img\carousel-2.jpg" />
     <Content Include="img\carousel-3.jpg" />
@@ -251,12 +232,26 @@
     <Content Include="worker_profile.aspx" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="admin\Area_List.aspx.cs">
-      <DependentUpon>Area_List.aspx</DependentUpon>
+    <Compile Include="admin\A-Login.aspx.cs">
+      <DependentUpon>A-Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\Area_List.aspx.designer.cs">
-      <DependentUpon>Area_List.aspx</DependentUpon>
+    <Compile Include="admin\A-Login.aspx.designer.cs">
+      <DependentUpon>A-Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\adminSide.Master.cs">
+      <DependentUpon>adminSide.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\adminSide.Master.designer.cs">
+      <DependentUpon>adminSide.Master</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Area-List.aspx.cs">
+      <DependentUpon>Area-List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Area-List.aspx.designer.cs">
+      <DependentUpon>Area-List.aspx</DependentUpon>
     </Compile>
     <Compile Include="admin\Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
@@ -265,33 +260,26 @@
     <Compile Include="admin\Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\Service_List.aspx.cs">
-      <DependentUpon>Service_List.aspx</DependentUpon>
+    <Compile Include="admin\Service-List.aspx.cs">
+      <DependentUpon>Service-List.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\Service_List.aspx.designer.cs">
-      <DependentUpon>Service_List.aspx</DependentUpon>
+    <Compile Include="admin\Service-List.aspx.designer.cs">
+      <DependentUpon>Service-List.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\workerSide.Master.cs">
-      <DependentUpon>workerSide.Master</DependentUpon>
+    <Compile Include="admin\User-List.aspx.cs">
+      <DependentUpon>User-List.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\workerSide.Master.designer.cs">
-      <DependentUpon>workerSide.Master</DependentUpon>
+    <Compile Include="admin\User-List.aspx.designer.cs">
+      <DependentUpon>User-List.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\A_Login.aspx.cs">
-      <DependentUpon>A_Login.aspx</DependentUpon>
+    <Compile Include="Booking.aspx.cs">
+      <DependentUpon>Booking.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\A_Login.aspx.designer.cs">
-      <DependentUpon>A_Login.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="booking.aspx.cs">
-      <DependentUpon>booking.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="booking.aspx.designer.cs">
-      <DependentUpon>booking.aspx</DependentUpon>
+    <Compile Include="Booking.aspx.designer.cs">
+      <DependentUpon>Booking.aspx</DependentUpon>
     </Compile>
     <Compile Include="Class1.cs" />
     <Compile Include="index.aspx.cs">
@@ -461,17 +449,121 @@
     <Content Include="scss\bootstrap\scss\_type.scss" />
     <Content Include="scss\bootstrap\scss\_utilities.scss" />
     <Content Include="scss\bootstrap\scss\_variables.scss" />
-    <Content Include="admin\workerSide.Master" />
-    <Content Include="admin\assets\font-awesome\fonts\fontawesome-webfont.eot" />
-    <Content Include="admin\assets\font-awesome\fonts\fontawesome-webfont.ttf" />
-    <Content Include="admin\assets\font-awesome\fonts\fontawesome-webfont.woff" />
-    <Content Include="admin\assets\font-awesome\fonts\FontAwesome.otf" />
-    <Content Include="admin\assets\fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="admin\assets\fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="admin\assets\fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="admin\assets\lineicons\fonts\linecons.eot" />
-    <Content Include="admin\assets\lineicons\fonts\linecons.ttf" />
-    <Content Include="admin\assets\lineicons\fonts\linecons.woff" />
+    <Content Include="admin\adminSide.Master" />
+    <Content Include="admin\fonts\Flaticon.woff" />
+    <Content Include="admin\fonts\flexslider-icon.eot" />
+    <Content Include="admin\fonts\flexslider-icon.ttf" />
+    <Content Include="admin\fonts\flexslider-icon.woff" />
+    <Content Include="admin\fonts\fontawesome-webfont.eot" />
+    <Content Include="admin\fonts\fontawesome-webfont.ttf" />
+    <Content Include="admin\fonts\fontawesome-webfont.woff" />
+    <Content Include="admin\fonts\fontawesome-webfont.woff2" />
+    <Content Include="admin\fonts\FontAwesome.otf" />
+    <Content Include="admin\fonts\Poppins-Black.ttf" />
+    <Content Include="admin\fonts\Poppins-BlackItalic.ttf" />
+    <Content Include="admin\fonts\Poppins-Bold.ttf" />
+    <Content Include="admin\fonts\Poppins-BoldItalic.ttf" />
+    <Content Include="admin\fonts\Poppins-ExtraBold.ttf" />
+    <Content Include="admin\fonts\Poppins-ExtraBoldItalic.ttf" />
+    <Content Include="admin\fonts\Poppins-ExtraLight.ttf" />
+    <Content Include="admin\fonts\Poppins-ExtraLightItalic.ttf" />
+    <Content Include="admin\fonts\Poppins-Italic.ttf" />
+    <Content Include="admin\fonts\Poppins-Light.ttf" />
+    <Content Include="admin\fonts\Poppins-LightItalic.ttf" />
+    <Content Include="admin\fonts\Poppins-Medium.ttf" />
+    <Content Include="admin\fonts\Poppins-MediumItalic.ttf" />
+    <Content Include="admin\fonts\Poppins-Regular.ttf" />
+    <Content Include="admin\fonts\Poppins-SemiBold.ttf" />
+    <Content Include="admin\fonts\Poppins-SemiBoldItalic.ttf" />
+    <Content Include="admin\fonts\Poppins-Thin.ttf" />
+    <Content Include="admin\fonts\Poppins-ThinItalic.ttf" />
+    <Content Include="admin\fonts\slick.eot" />
+    <Content Include="admin\fonts\slick.ttf" />
+    <Content Include="admin\fonts\slick.woff" />
+    <Content Include="admin\img\bg2.webp" />
+    <Content Include="admin\lib\owlcarousel\LICENSE" />
+    <Content Include="admin\scss\bootstrap.scss" />
+    <Content Include="admin\scss\bootstrap\scss\bootstrap-grid.scss" />
+    <Content Include="admin\scss\bootstrap\scss\bootstrap-reboot.scss" />
+    <Content Include="admin\scss\bootstrap\scss\bootstrap-utilities.scss" />
+    <Content Include="admin\scss\bootstrap\scss\bootstrap.scss" />
+    <Content Include="admin\scss\bootstrap\scss\forms\_floating-labels.scss" />
+    <Content Include="admin\scss\bootstrap\scss\forms\_form-check.scss" />
+    <Content Include="admin\scss\bootstrap\scss\forms\_form-control.scss" />
+    <Content Include="admin\scss\bootstrap\scss\forms\_form-range.scss" />
+    <Content Include="admin\scss\bootstrap\scss\forms\_form-select.scss" />
+    <Content Include="admin\scss\bootstrap\scss\forms\_form-text.scss" />
+    <Content Include="admin\scss\bootstrap\scss\forms\_input-group.scss" />
+    <Content Include="admin\scss\bootstrap\scss\forms\_labels.scss" />
+    <Content Include="admin\scss\bootstrap\scss\forms\_validation.scss" />
+    <Content Include="admin\scss\bootstrap\scss\helpers\_clearfix.scss" />
+    <Content Include="admin\scss\bootstrap\scss\helpers\_colored-links.scss" />
+    <Content Include="admin\scss\bootstrap\scss\helpers\_position.scss" />
+    <Content Include="admin\scss\bootstrap\scss\helpers\_ratio.scss" />
+    <Content Include="admin\scss\bootstrap\scss\helpers\_stretched-link.scss" />
+    <Content Include="admin\scss\bootstrap\scss\helpers\_text-truncation.scss" />
+    <Content Include="admin\scss\bootstrap\scss\helpers\_visually-hidden.scss" />
+    <Content Include="admin\scss\bootstrap\scss\mixins\_alert.scss" />
+    <Content Include="admin\scss\bootstrap\scss\mixins\_border-radius.scss" />
+    <Content Include="admin\scss\bootstrap\scss\mixins\_box-shadow.scss" />
+    <Content Include="admin\scss\bootstrap\scss\mixins\_breakpoints.scss" />
+    <Content Include="admin\scss\bootstrap\scss\mixins\_buttons.scss" />
+    <Content Include="admin\scss\bootstrap\scss\mixins\_caret.scss" />
+    <Content Include="admin\scss\bootstrap\scss\mixins\_clearfix.scss" />
+    <Content Include="admin\scss\bootstrap\scss\mixins\_color-scheme.scss" />
+    <Content Include="admin\scss\bootstrap\scss\mixins\_container.scss" />
+    <Content Include="admin\scss\bootstrap\scss\mixins\_deprecate.scss" />
+    <Content Include="admin\scss\bootstrap\scss\mixins\_forms.scss" />
+    <Content Include="admin\scss\bootstrap\scss\mixins\_gradients.scss" />
+    <Content Include="admin\scss\bootstrap\scss\mixins\_grid.scss" />
+    <Content Include="admin\scss\bootstrap\scss\mixins\_image.scss" />
+    <Content Include="admin\scss\bootstrap\scss\mixins\_list-group.scss" />
+    <Content Include="admin\scss\bootstrap\scss\mixins\_lists.scss" />
+    <Content Include="admin\scss\bootstrap\scss\mixins\_pagination.scss" />
+    <Content Include="admin\scss\bootstrap\scss\mixins\_reset-text.scss" />
+    <Content Include="admin\scss\bootstrap\scss\mixins\_resize.scss" />
+    <Content Include="admin\scss\bootstrap\scss\mixins\_table-variants.scss" />
+    <Content Include="admin\scss\bootstrap\scss\mixins\_text-truncate.scss" />
+    <Content Include="admin\scss\bootstrap\scss\mixins\_transition.scss" />
+    <Content Include="admin\scss\bootstrap\scss\mixins\_utilities.scss" />
+    <Content Include="admin\scss\bootstrap\scss\mixins\_visually-hidden.scss" />
+    <Content Include="admin\scss\bootstrap\scss\utilities\_api.scss" />
+    <Content Include="admin\scss\bootstrap\scss\vendor\_rfs.scss" />
+    <Content Include="admin\scss\bootstrap\scss\_accordion.scss" />
+    <Content Include="admin\scss\bootstrap\scss\_alert.scss" />
+    <Content Include="admin\scss\bootstrap\scss\_badge.scss" />
+    <Content Include="admin\scss\bootstrap\scss\_breadcrumb.scss" />
+    <Content Include="admin\scss\bootstrap\scss\_button-group.scss" />
+    <Content Include="admin\scss\bootstrap\scss\_buttons.scss" />
+    <Content Include="admin\scss\bootstrap\scss\_card.scss" />
+    <Content Include="admin\scss\bootstrap\scss\_carousel.scss" />
+    <Content Include="admin\scss\bootstrap\scss\_close.scss" />
+    <Content Include="admin\scss\bootstrap\scss\_containers.scss" />
+    <Content Include="admin\scss\bootstrap\scss\_dropdown.scss" />
+    <Content Include="admin\scss\bootstrap\scss\_forms.scss" />
+    <Content Include="admin\scss\bootstrap\scss\_functions.scss" />
+    <Content Include="admin\scss\bootstrap\scss\_grid.scss" />
+    <Content Include="admin\scss\bootstrap\scss\_helpers.scss" />
+    <Content Include="admin\scss\bootstrap\scss\_images.scss" />
+    <Content Include="admin\scss\bootstrap\scss\_list-group.scss" />
+    <Content Include="admin\scss\bootstrap\scss\_mixins.scss" />
+    <Content Include="admin\scss\bootstrap\scss\_modal.scss" />
+    <Content Include="admin\scss\bootstrap\scss\_nav.scss" />
+    <Content Include="admin\scss\bootstrap\scss\_navbar.scss" />
+    <Content Include="admin\scss\bootstrap\scss\_offcanvas.scss" />
+    <Content Include="admin\scss\bootstrap\scss\_pagination.scss" />
+    <Content Include="admin\scss\bootstrap\scss\_popover.scss" />
+    <Content Include="admin\scss\bootstrap\scss\_progress.scss" />
+    <Content Include="admin\scss\bootstrap\scss\_reboot.scss" />
+    <Content Include="admin\scss\bootstrap\scss\_root.scss" />
+    <Content Include="admin\scss\bootstrap\scss\_spinners.scss" />
+    <Content Include="admin\scss\bootstrap\scss\_tables.scss" />
+    <Content Include="admin\scss\bootstrap\scss\_toasts.scss" />
+    <Content Include="admin\scss\bootstrap\scss\_tooltip.scss" />
+    <Content Include="admin\scss\bootstrap\scss\_transitions.scss" />
+    <Content Include="admin\scss\bootstrap\scss\_type.scss" />
+    <Content Include="admin\scss\bootstrap\scss\_utilities.scss" />
+    <Content Include="admin\scss\bootstrap\scss\_variables.scss" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

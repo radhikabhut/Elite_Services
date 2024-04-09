@@ -12,6 +12,8 @@ namespace Elite_Services
 {
     public partial class U_Login : System.Web.UI.Page
     {
+        SqlDataAdapter da;
+        DataSet ds;
         SqlConnection con;
         SqlCommand cmd;
         Class1 cs;
@@ -32,14 +34,27 @@ namespace Elite_Services
             if (!(string.IsNullOrEmpty(txt_eml.Text) && !(string.IsNullOrEmpty(txt_ps.Text))))
             {
                 startcon();
-                cmd = new SqlCommand("select * from U_Regi_tbl where Email_Id ='" + txt_eml.Text + "' and Password = '" + txt_ps.Text + "'    ", con);
+                string sql = "select * from U_Regi_tbl where Email_Id ='" + txt_eml.Text + "' and Password = '" + txt_ps.Text + "'    ";
+                cmd = new SqlCommand(sql, con);
 
                 i = Convert.ToInt32(cmd.ExecuteScalar());
                 if (i > 0)
                 {
+                    da = new SqlDataAdapter(sql,con);
+                    ds = new DataSet();
+                    da.Fill(ds);
 
-                    Session["email"] = txt_eml.Text;
-                    Session["ps"] = txt_ps.Text;
+
+
+                    Session["UId"] = (ds.Tables[0].Rows[0][0]).ToString();
+                    Session["User_Name"] = (ds.Tables[0].Rows[0][1]).ToString();
+                    Session["Full_Name"] = (ds.Tables[0].Rows[0][2]).ToString();
+                    Session["Gender"] = (ds.Tables[0].Rows[0][3]).ToString();
+                    Session["Mobile"] = (ds.Tables[0].Rows[0][4]).ToString();
+                    Session["Email_Id"] = txt_eml.Text;
+                    Session["City"] = (ds.Tables[0].Rows[0][6]).ToString();
+                    Session["Address"] = (ds.Tables[0].Rows[0][7]).ToString();
+
                     Response.Redirect("index.aspx");
                 }
                 else

@@ -8,7 +8,9 @@ namespace Elite_Services
     {
         Class1 cs;
         SqlConnection con;
+        SqlCommand cmd;
         DataSet ds;
+        int workerId;
         void getcon()
         {
             cs = new Class1();
@@ -22,7 +24,7 @@ namespace Elite_Services
                 if (Request.QueryString["Id"] != null)
                 {
                     // Get the value of the "Id" parameter from the URL
-                    int workerId = Convert.ToInt32(Request.QueryString["Id"]);
+                     workerId = Convert.ToInt32(Request.QueryString["Id"]);
                     getcon();
                     ds = new DataSet();
                     
@@ -32,6 +34,7 @@ namespace Elite_Services
                     if (ds != null && ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
                     {
                         DataRow row = ds.Tables[0].Rows[0];
+
                         // Fill data into textboxes
                         txt_fnm.Text = row["Full_Name"].ToString();
                         txt_gen.Text = row["Gender"].ToString();
@@ -58,7 +61,11 @@ namespace Elite_Services
 
         protected void submit_Click(object sender, EventArgs e)
         {
-            Response.Redirect("booking.aspx");
+            getcon();
+            
+            cmd = new SqlCommand("insert into WorkerBookings_tbl(UID,WID,BookingDate) values('"+Session["UId"]+"','"+ Convert.ToInt32(Request.QueryString["Id"]) + "','"+DateTime.Now.ToString("dd/MM/yyyy")+"')", con);
+            cmd.ExecuteNonQuery();
+            Response.Write("<script>alert('Booked');</script>");
         }
 
 
